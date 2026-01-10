@@ -150,6 +150,9 @@ footer {
 		width: 100vw;
 		height: 100vh;
 	}
+	.navLinksContainer a {
+		margin-left: 0;
+	}
 	.cta, .navLinksContainer a:not(.cta) {
 		width: 25%;
 		min-width: 150px;
@@ -182,4 +185,7 @@ footer {
         text-align: center;
         margin: 50px auto;
     }
+	#homeHeaderContent h1 {
+		line-height: 2.5rem;
+	}
 }
