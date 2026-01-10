@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f1ca8c;
+}
+p, a, li {
+	font-size: 1.2rem;
+	font-family: "Montserrat", sans-serif;
+}
+h1 {
+	font-size: 2.75rem;
+	font-family: "DM Serif Display", serif;
+}
+h2 {
+	font-size: 2rem;
+	font-family: "DM Serif Display", serif;
+}
+h3 {
+	font-size: 1.5rem;
+	font-family: "DM Serif Display", serif;
+}
+nav {
+	background-color: #f8f3ea;
+	display: flex;
+	position: fixed;
+	width: calc(100vw - 100px);
+	top: 0;
+	left: 0;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 50px;
+}
+nav a img {
+	width: 50%;
+	min-width: 100px;
+}
+.navLinksContainer {
+	gap: 50px;  
+	font-family: "Montserrat", sans-serif;
+}
+.navLinksContainer a {
+	text-decoration: none;
+	margin-left: 50px;
+}
+.navLinksContainer a:not(.cta) {
+	color: rgba(0,0,0,0.8);
+	padding: 15px;
+	border-radius: 15px;
+	transition: 0.4s color, 0.4s background;
+}
+.navLinksContainer a:not(.cta):hover {
+	color: rgba(0,0,0,1);
+	background: #e8e1d3;
+}
+.cta {
+	background-color: #565bf5;
+	color: white;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: 0.4s background;
+}
+.cta:hover {
+	background-color: #4d52d1;
+}
+#menuPhone {
+	display: none;
+	width: 25px;
+	cursor: pointer;
+	position: relative;
+	z-index: 11;
+}
+main {
+	margin-top: var(--nav-height);
+	padding: 0;
+	display: flex;
+}
+#homeMain * {
+	width: 50%;
+}
+#homeHeaderImg {
+	background: url("./Images/homeHeader.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 25%;
+	height: calc(100vh - var(--nav-height));
+}
+#homeHeaderContentContainer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 100px;
+	background-color: #f1ca8c;
+}
+#homeHeaderContent {
+	color: #000080;
+	width: 75%;
+}
+#homeHeaderContent * {
+	width: 100%;
+}
+#homeHeaderContent p {
+	line-height: 1.35rem;
+	font-family: "Montserrat", sans-serif;
+}
+#homeHeaderContent h1 {
+	font-family: "DM Serif Display", serif;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	line-height: 3.5rem;
+}
+#homeHeaderContent a {
+	font-family: "Montserrat", sans-serif;
+}
+footer {
+	background-color: #222222;
+	color: white;
+	text-align: center;
+	margin: 0;	
+	padding: 5px 0;
+}
+@media (max-width: 1100px) {
+	#menuPhone {
+		display: inline;
+	}
+	.navLinksContainer {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		background-color: #f8f3ea;
+		width: 100vw;
+		height: 100vh;
+	}
+	.cta, .navLinksContainer a:not(.cta) {
+		width: 25%;
+		min-width: 150px;
+	}
+
+}
+@media (max-width: 700px) {
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+	#homeMain * {
+		width: 100%;
+	}
+	#homeHeaderImg {
+		width: 50%;
+		height: 50vh;
+		border-radius: 5%;
+		margin-left: 25%;
+		margin-bottom: 50px;
+	}
+	#homeHeaderContentContainer {
+		padding-right: 0;
+		justify-content: center;
+	}
+	#homeHeaderContent {
+		color: #000080;
+		width: 75%;
+		text-align: center;
+		margin: 50px 0;
+	}
+}
