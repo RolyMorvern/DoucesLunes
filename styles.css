@@ -5,20 +5,20 @@ body {
 	background-color: #f1ca8c;
 }
 p, a, li {
-/*	font-size: 1.2rem;
-*/	font-family: "Montserrat", sans-serif;
+	font-size: 1.2rem;
+	font-family: "Montserrat", sans-serif;
 }
 h1 {
-/*	font-size: 2.75rem;
-*/	font-family: "DM Serif Display", serif;
+	font-size: 2.75rem;
+	font-family: "DM Serif Display", serif;
 }
 h2 {
-/*	font-size: 2rem;
-*/	font-family: "DM Serif Display", serif;
+	font-size: 2rem;
+	font-family: "DM Serif Display", serif;
 }
 h3 {
-/*	font-size: 1.5rem;
-*/	font-family: "DM Serif Display", serif;
+	font-size: 1.5rem;
+	font-family: "DM Serif Display", serif;
 }
 nav {
 	background-color: #f8f3ea;
