@@ -133,6 +133,10 @@ footer {
 	h3 {
 		font-size: 1.25rem;
 	}
+	nav a img {
+		width: 35%;
+		min-width: 50px;
+	}
 	#menuPhone {
 		display: inline;
 	}
