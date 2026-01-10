@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Douces Lunes | Contacter</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="icon" type="img/png" href="./Images/logo.png">
+	</head>
+	<body>
+		<nav>
+			<a href="./index.html">
+				<img src="./Images/logo2.png" />
+			</a>
+			<div class="navLinksContainer">
+				<a class="navLink" href="./fabrication.html">Fabrication</a>
+				<a class="navLink" href="./contacter.html">Contacter</a>
+				<a class="navLink cta" href="./acheter.html">Acheter</a>
+			</div>
+			<img src="./Images/menu.svg" id="menuPhone" />
+		</nav>
+		<main id="contactMain">
+			<div class="contacterCol">
+				<h1>CONTACT</h1>
+				<p>Vous avez des questions ? Contactez-nous !</p>
+				<form id="contactForm">
+				    <label for="formName">Nom Complet</label>
+				    <input type="text" name="name" id="formName" required>
+				    <label for="formEmail">Addresse E-mail</label>
+				    <input type="email" name="email" id="formEmail" required>
+				    <label for="formMessage">Message</label>
+				    <textarea name="message" id="formMessage" required></textarea>
+				    <button type="submit" id="submitForm" class="cta">Envoyer</button>
+				</form>
+			</div>
+			<div class="contacterCol">
+				<h2>NOUS CONTACTER</h2>
+				<a id="contactEmail" href="mailto:teddybg42@proton.me"><img id="contactEmailIcon" src="./Images/email.svg" alt="Email Icon">
+				teddybg42@proton.me</a>
+				<a href="" target="_blank" id="contactIg"><img src="./Images/instaLogo.svg" alt="Instagram Logo"></a>
+				<div id="contactImg"></div>
+			</div>
+		</main>
+		<footer>
+			<p>Créé par Roly, Lucas et Quentin</p>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./script.js"></script>
+	</body>
+</html>

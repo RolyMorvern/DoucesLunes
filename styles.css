@@ -5,7 +5,7 @@ body {
 	color: #000080;
 	background-color: #f1ca8c;
 }
-p, a, li {
+p, a, li, input, textarea, label {
 	font-size: 1.2rem;
 	font-family: "Montserrat", sans-serif;
 }
@@ -125,7 +125,7 @@ footer {
 
 /* FABRICATION */
 
-#mainFabrication {
+#mainFabrication, #contactMain {
 	padding: 20px 50px;
 	text-align: center;
 }
@@ -174,8 +174,90 @@ footer {
 .mainFabricationItem p {
     margin-left: 70px;
 }
+
+/*  CONTACTER */
+
+#contactMain {
+	display: flex;
+}
+#contactMain h1, #contactMain h2 {
+	font-size: 2.5rem;
+}
+#contactMain > div {
+	width: 50%;
+}
+#contactMain > div:first-of-type {
+	padding-right: 50px;
+	border-right: 2px dotted black;
+}
+#contactForm {
+	text-align: left;
+	background-color: #fbf4f2;
+	padding: 25px;
+	border-radius: 15px;
+}
+#contactForm * {
+	display: block;
+	margin-bottom: 5px;
+}
+#contactForm input, #contactForm textarea {
+	margin-bottom: 15px;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 5px;
+	width: 100%;
+	border-radius: 3px;
+}
+#contactForm textarea {
+	resize: none;
+	aspect-ratio: 1/0.15;
+}
+#contactForm .cta {
+	border: none;
+	cursor: pointer;
+	margin-top: 25px;
+	font-size: 1rem;
+	padding: 20px 35px;
+}
+#contactEmail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+#contactEmailIcon {
+	width: 25px;
+	transform: translateY(2px);
+}
+.contacterCol a {
+	text-decoration: none;
+}
+#contactIg {
+	background-color: #fae0c7;
+	padding: 10px 15px;
+	display: flex;
+	width: 3.5rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.15);
+	margin: 0 auto;
+	margin-top: 15px;
+}
+#contactIg img {
+	width: 2rem;
+}
+#contactImg {
+	border-radius: 15px;
+	width: calc(100% - 50px);
+	aspect-ratio: 1/0.8;
+	margin: 25px 0 0 50px;
+	background: url("./Images/contactImg.png");
+	background-repeat: no-repeat;
+	background-position: center 35%;
+	background-size: cover;
+}
 @media (max-width: 1100px) {
-	p, a, li {
+	p, a, li, input, textarea, label {
 		font-size: 0.9rem;
 	}
 	h1 {
@@ -215,7 +297,7 @@ footer {
 		width: 25%;
 		min-width: 150px;
 	}
-    main {
+    #homeMain {
         display: flex;
         flex-direction: column;
     }
@@ -256,6 +338,22 @@ footer {
 	}
 	.mainFabricationItemContent {
 		width: 100%;
+	}
+	#contactMain {
+		flex-direction: column;
+	}
+	#contactMain > div {
+		width: 100%;
+	}
+	#contactMain > div:first-of-type {
+		border-right: none;
+		padding-right: 0;
+		padding-bottom: 50px;
+		border-bottom: 2px dotted black;
+	}
+	#contactImg {
+		width: 100%;
+		margin-left: 0;
 	}
 }
 @media (max-width: 450px) {
