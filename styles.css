@@ -367,11 +367,11 @@ hr {
 	border-radius: 50%;
 	cursor: pointer;
 }
-#cream { background: url("./Images/white.png") }
-#brown { background: url("./Images/brown.png") }
-#black { background: url("./Images/black.png") }
-#pink { background: url("./Images/pink.png") }
-#blue { background: url("./Images/blue.png") }
+#cream { background: url("./Images/white.png"); background-size: cover; }
+#brown { background: url("./Images/brown.png"); background-size: cover; }
+#black { background: url("./Images/black.png"); background-size: cover; }
+#pink { background: url("./Images/pink.png"); background-size: cover; }
+#blue { background: url("./Images/blue.png"); background-size: cover; }
 #buyButton {
 	border: none;
 	margin-top: 25px;
