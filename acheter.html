@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Douces Lunes | Acheter</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="icon" type="img/png" href="./Images/logo.png">
+	</head>
+	<body>
+		<nav>
+			<a href="./index.html">
+				<img src="./Images/logo2.png" />
+			</a>
+			<div class="navLinksContainer">
+				<a class="navLink" href="./fabrication.html">Fabrication</a>
+				<a class="navLink" href="./contacter.html">Contacter</a>
+				<a class="navLink cta" href="./acheter.html">Acheter</a>
+			</div>
+			<img src="./Images/menu.svg" id="menuPhone" />
+		</nav>
+		<main id="mainAcheter">
+			<div id="acheterImg"></div>
+			<div id="acheterContent">
+				<h1>ACHETER TEDDY</h1>
+				<p>L'ours en peluche de M. Bean, fait à la main avec des matériaux doux et durables.</p>
+				<p id="itemPrice">€10</p>
+				<hr>
+				<p>Choisissez une taille :</p>
+				<div class="sizeContainer">
+					<p onclick="updatePrice('10')" class="size activeSize">S</p>
+					<p onclick="updatePrice('20')" class="size">M</p>
+					<p onclick="updatePrice('40')" class="size">L</p>
+				</div>
+				<p>Choisissez une couleur :</p>
+				<div class="colorContainer">
+					<div class="active">
+						<div id="cream" class="color"></div>
+					</div>
+					<div id="brown" class="color"></div>
+					<div id="black" class="color"></div>
+					<div id="pink" class="color"></div>
+					<div id="blue" class="color"></div>
+				</div>
+				<hr>
+				<button onclick="alert('Fonctionnalité non encore disponible')" id="buyButton" class="cta">Acheter</button>
+			</div>
+		</main>
+		<footer>
+			<p>Créé par Roly, Lucas et Quentin</p>
+		</footer>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./script.js"></script>
+	</body>
+</html>

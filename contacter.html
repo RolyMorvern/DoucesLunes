@@ -6,6 +6,36 @@
 		<title>Douces Lunes | Contacter</title>
 		<link rel="stylesheet" href="./styles.css" />
 		<link rel="icon" type="img/png" href="./Images/logo.png">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	    <script type="text/javascript">
+			(function() {
+			    emailjs.init({
+			        publicKey: "33BbjEeOEOV5zqA7J",
+			    });
+			})();
+
+			function sendMail(event) {
+			    if (event) event.preventDefault();
+			    let params = {
+			        name: document.getElementById("formName").value,
+			        email: document.getElementById("formEmail").value,
+			        message: document.getElementById("formMessage").value,
+			    };
+			    emailjs.send("service_2c3l9ho", "template_sn9hr3j", params)
+			        .then(function(response) {
+			            alert("Merci pour votre message");
+			            document.getElementById("contactForm").reset();
+			        }, function(error) {
+			            alert("Une erreur s'est produite. Veuillez réessayer ou envoyer un email directement à teddybg42@proton.me");
+			            console.error("EmailJS Error:", error);
+			        });
+			        
+			    return false;
+			}
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.getElementById('contactForm').addEventListener('submit', sendMail);
+			});
+		</script>
 	</head>
 	<body>
 		<nav>
@@ -37,7 +67,7 @@
 				<h2>NOUS CONTACTER</h2>
 				<a id="contactEmail" href="mailto:teddybg42@proton.me"><img id="contactEmailIcon" src="./Images/email.svg" alt="Email Icon">
 				teddybg42@proton.me</a>
-				<a href="" target="_blank" id="contactIg"><img src="./Images/instaLogo.svg" alt="Instagram Logo"></a>
+				<a href="https://www.instagram.com/douce_lune42/" target="_blank" id="contactIg"><img src="./Images/instaLogo.svg" alt="Instagram Logo"></a>
 				<div id="contactImg"></div>
 			</div>
 		</main>

@@ -5,7 +5,7 @@ body {
 	color: #000080;
 	background-color: #f1ca8c;
 }
-p, a, li, input, textarea, label {
+p, a, li, input, textarea, label, button {
 	font-size: 1.2rem;
 	font-family: "Montserrat", sans-serif;
 }
@@ -151,10 +151,45 @@ footer {
 	width: 100%;
 }
 .mainFabricationItemImg {
-	background-color: green;
 	width: 25%;
 	aspect-ratio: 1/0.6;
 	border-radius: 15px;
+}
+#fabricationImg1 {
+	background: url("./Images/fabricationImg1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#fabricationImg2 {
+	background: url("./Images/fabricationImg2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 25%;
+}
+#fabricationImg3 {
+	background: url("./Images/fabricationHero.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#fabricationImg4 {
+	background: url("./Images/fabricationImg4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 25%;
+}
+#fabricationImg5 {
+	background: url("./Images/fabricationImg6.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 30%;
+}
+#fabricationImg6 {
+	background: url("./Images/fabricationImg5.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .mainFabricationItemContent {
 	width: 75%;
@@ -256,14 +291,102 @@ footer {
 	background-position: center 35%;
 	background-size: cover;
 }
+
+/* ACHETER */
+
+#mainAcheter {
+	padding: 20px 50px;
+	display: flex;
+	gap: 25px;
+}
+#acheterImg {
+	width: 40%;
+	aspect-ratio: 1/1.25;
+	border-radius: 15px;
+	background: url("./Images/homeHeader.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 25%;
+}
+#acheterContent p {
+	margin-bottom: 0;
+}
+#itemPrice {
+	font-size: 2rem;
+	font-family: "DM Serif Display", serif;
+}
+hr {
+	margin-top: 25px;
+	border: 1px solid rgba(0,0,0,0.075);
+}
+.sizeContainer {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 25px;
+}
+.size {
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px 25px;
+	font-weight: 600;
+}
+.activeSize {
+	background-color: #1b1455;
+	color: white;
+}
+.colorContainer {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-top: 10px;
+}
+.active {
+	padding: 7px;
+	border: 2px solid black;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.active:after {
+	content: "";
+	background-color: rgba(0,0,0,0.1);
+	background-image: url("./Images/tick.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	width: 100%;
+	aspect-ratio: 1/1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.color {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#cream { background: url("./Images/white.png") }
+#brown { background: url("./Images/brown.png") }
+#black { background: url("./Images/black.png") }
+#pink { background: url("./Images/pink.png") }
+#blue { background: url("./Images/blue.png") }
+#buyButton {
+	border: none;
+	margin-top: 25px;
+	cursor: pointer;
+	padding: 15px 50px;
+}
+
 @media (max-width: 1100px) {
-	p, a, li, input, textarea, label {
+	p, a, li, input, textarea, label, button {
 		font-size: 0.9rem;
 	}
 	h1 {
 		font-size: 2rem;
 	}
-	h2 {
+	h2, #itemPrice {
 		font-size: 1.5rem;
 	}
 	h3 {
@@ -327,6 +450,14 @@ footer {
     }
 	#homeHeaderContent h1 {
 		line-height: 2.5rem;
+	}
+	#mainAcheter {
+		flex-direction: column;
+	}
+	#acheterImg {
+		width: 60%;
+		min-width: 200px;
+		aspect-ratio: 1/1.25;
 	}
 }
 @media (max-width: 800px) {
